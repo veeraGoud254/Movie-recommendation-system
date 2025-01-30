@@ -1,0 +1,126 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #fff;
+  color: #333;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+}
+
+.topic h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+header nav {
+  align-content: center;
+}
+
+header nav a {
+  color: #333;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 0.5rem;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.movie {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  width: 200px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.movie img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+/* LOGIN CSS */
+.dntaccount {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  padding: 2em 1em;
+  text-align: center;
+  color: #fff;
+  background-image: linear-gradient(0deg, #04aa6d 1%, #04aa6d);
+  width: 100vw !important;
+  position: relative;
+  margin-left: -50vw;
+  left: 50%;
+}
+
+#search-word {
+  font-size: 16px;
+  line-height: 24px;
+  padding: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 0;
+  width: 500px;
+  height: 25px;
+  color: #000;
+}
+
+#generate-button {
+  width: 120px;
+  height: 30px;
+  padding: 0;
+  line-height: 1;
+  background-color: #282a35;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid #282a35;
+  color: #fff;
+  background-color: #282a35;
+  cursor: pointer;
+  height: 50px;
+  border: 2px solid #282a35;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+}

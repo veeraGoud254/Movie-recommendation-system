@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommended Movies</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Recommended Movies</h1>
+    </header>
+    <main>
+        {% if recommended_movies %}
+            <div class="movies">
+                {% for movie in recommended_movies %}
+                    <div class="movie">
+                        <h2>{{ movie.title }}</h2>
+                        <img src="https://image.tmdb.org/t/p/w500{{ movie.poster_path }}" alt="{{ movie.title }}">
+                        <p>{{ movie.overview }}</p>
+                    </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <p>No similar movies found.</p>
+        {% endif %}
+    </main>
+</body>
+</html>

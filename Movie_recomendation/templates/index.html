@@ -1,0 +1,28 @@
+{% extends "base.html" %} {% block content %}
+
+<div class="container">
+  <h1>Movies Finder</h1>
+  <p>Get movies recommendation based on your search</p>
+  <form action="/search" method="POST">
+    <input
+      id="search-word"
+      type="text"
+      name="query"
+      placeholder="Search for a movie" />
+    <button id="generate-button" type="submit">Search</button>
+  </form>
+</div>
+{% if movies %}
+<div class="movies">
+  {% for movie in movies %}
+  <div class="movie">
+    <h2>{{ movie.title }}</h2>
+    <img
+      src="https://image.tmdb.org/t/p/w500{{ movie.poster_path }}"
+      alt="{{ movie.title }}" />
+    <p>{{ movie.overview }}</p>
+    <a href="/recommend/{{ movie.id }}">Recommend similar movies</a>
+  </div>
+  {% endfor %}
+</div>
+{% endif %} {% endblock %}
